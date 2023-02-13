@@ -9,8 +9,8 @@ body {
 }
 img {
     width: 100%;
-    display: block;
-    margin: 0;
+    height: 100%;
+    object-fit: cover;
 }
 main {
     width: 100%;
@@ -23,9 +23,9 @@ h1 {
 }
 .container {
     width: 90%;
-    margin: 20px auto;
-    border-radius: 1rem;
+    margin: 10px auto;
     overflow: hidden;
+    border-radius: 1rem;
 }
 @media (min-width: 992px) {
     .container {
@@ -42,7 +42,7 @@ h1 {
 @media (min-width: 992px) {
     .logo {
         background-image: url(images/image-product-desktop.jpg);
-        width: 100vw;
+        width: 60vw;
         height: 80vh;
     }
 }
@@ -52,7 +52,7 @@ h1 {
 }
 @media (min-width: 992px) {
     .content {
-        padding: 4rem;
+        flex-basis: 1;
     }
 }
 .content .tag {
@@ -62,37 +62,39 @@ h1 {
 }
 @media (min-width: 992px) {
     .content .tag {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 }
 .content .title {
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: .5rem;
 }
 @media (min-width: 992px) {
     .content .title {
-        margin-bottom: 3rem;
+        font-size: 3rem;
+        margin-bottom: 2rem;
     }
 }
 .content .description  {
-    font-size: 1.8ch;
+    font-size: 1.5ch;
     margin-bottom: 1.5rem;
 }
 @media (min-width: 992px) {
     .content .description {
-        margin-bottom: 3rem;
+        font-size: 1.8ch;
+        margin-bottom: 2rem;
     }
 }
 .price {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
 @media (min-width: 992px) {
     .price {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 }
 .price-new {
@@ -108,13 +110,19 @@ h1 {
     width: 100%;
     border-radius: .5rem;
     border: none;
-    padding: 1.2rem;
-    font-size: 1.2rem;
+    padding: .8rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #fff;
     background-color: hsl(158, 36%, 37%);
     cursor: pointer;
     transition: .1s ease-out;
+}
+@media (min-width: 992px) {
+    .btn {
+        padding: 1.2rem;
+        font-size: 1.2rem;
+    }
 }
 .btn:hover {
     background-color: hsl(159, 40%, 14%)
