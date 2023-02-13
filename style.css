@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+img {
+    width: 100%;
+    display: block;
+    margin: 0;
+}
+main {
+    width: 100%;
+}
+p {
+    color: hsl(228, 12%, 48%);
+}
+h1 {
+    font-family: 'Fraunces', serif;
+}
+.container {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+@media (min-width: 992px) {
+    .container {
+        display: flex;
+    }
+}
+.logo {
+    background-image: url(images/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+@media (min-width: 992px) {
+    .logo {
+        background-image: url(images/image-product-desktop.jpg);
+        width: 100vw;
+        height: 80vh;
+    }
+}
+.content {
+    background-color: hsl(0, 0%, 100%);
+    padding: 2.5rem;
+}
+@media (min-width: 992px) {
+    .content {
+        padding: 4rem;
+    }
+}
+.content .tag {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin-bottom: .5rem;
+}
+@media (min-width: 992px) {
+    .content .tag {
+        margin-bottom: 3rem;
+    }
+}
+.content .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+@media (min-width: 992px) {
+    .content .title {
+        margin-bottom: 3rem;
+    }
+}
+.content .description  {
+    font-size: 1.8ch;
+    margin-bottom: 1.5rem;
+}
+@media (min-width: 992px) {
+    .content .description {
+        margin-bottom: 3rem;
+    }
+}
+.price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .5rem;
+}
+@media (min-width: 992px) {
+    .price {
+        margin-bottom: 3rem;
+    }
+}
+.price-new {
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+}
+.price-old {
+    text-decoration: line-through;
+}
+.btn {
+    width: 100%;
+    border-radius: .5rem;
+    border: none;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: hsl(158, 36%, 37%);
+    cursor: pointer;
+    transition: .1s ease-out;
+}
+.btn:hover {
+    background-color: hsl(159, 40%, 14%)
+}
+
+
